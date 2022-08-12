@@ -9,8 +9,8 @@ export default class ScrollAnima {
     this.checkDistande = debounce(this.checkDistande.bind(this), 200); // Apenas usando assim minha função de debounce
   }
 
-  // método que pega a distancia de cada item(section) em relação ao topo
 
+  // método que pega a distancia de cada item(section) em relação ao topo
   getDistance() {
     // sendo assim, criando um objeto chamdo "distance"
 
@@ -29,10 +29,10 @@ export default class ScrollAnima {
     // console.log(this.distance) // retornadno os dados da section, e a distancia até o topo (sendo um numero fixo)
   }
 
-  // verifica a distancia de cada sections em relação ao scroll do site
 
+  // verifica a distancia de cada sections em relação ao scroll do site
   checkDistande() {
-    // sendoconsole.log(window.pageYOffset) // sendo o off set do window referente a página
+    // sendo console.log(window.pageYOffset) // sendo o off set do window referente a página
 
     // para cada distancia que eu tenho, é uma array
 
@@ -48,7 +48,7 @@ export default class ScrollAnima {
       } else if (item.element.classList.contains("ativo")) {
         // fazedno essa verificação por que mesmo que ele não tenha passado por certa parte do site ele fica removendo mesmo assim, então para que funcione corretamente a "animação dos numeros" é necessario que não fique removendo esse atributo/classse toda hora
 
-        item.element.classList.remove("ativo");
+        // item.element.classList.remove("ativo"); // porem não vamos querer remover e adicioanr toda hora o efeito
       }
     });
   }
