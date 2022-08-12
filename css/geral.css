@@ -226,7 +226,7 @@ body{
   }
 
   .grid-section h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .menu{
@@ -295,12 +295,19 @@ display: none;
 }
 
 [data-anime="accordion"] dt::after{
-  content: '⮟';
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url('../img/arrows/arrow-red.svg') no-repeat center center;
+  transform: rotate(90deg);
+  transition: transform .3s;
   margin-left: 10px;
 }
 
 [data-anime="accordion"] dt.ativo::after{
-  content: '⮝';
+  content: '';
+  transform: rotate(-90deg);
   margin-left: 10px;
 }
 
@@ -355,4 +362,14 @@ display: none;
   padding: .2rem .5rem;
   font-weight: bold;
   border-radius: 2px;
+}
+
+
+/* Melhorias do projeto final */
+
+.arrow-black {
+  background: url('../img/arrows/arrow-black.svg') no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
 }

@@ -8,7 +8,7 @@ import fetchBitcoin from "./modules/fetch-bitcoin.js"; // caminho deste arquivo 
 import ScrollAnima from "./modules/scroll-anima.js"; // caminho deste arquivo em relação ao arquivo "scroll-animacoes"
 import DropdownMenu from "./modules/dropdownMenu.js"; // caminho deste arquivo em relação ao arquivo "dropdownMenu"
 import MenuMobile from "./modules/menu-mobile.js"; // caminho deste arquivo em relação ao arquivo "fetch-animais"
-import Funcionamento from "./modules/date-funcionamento.js"; // caminho deste arquivo em relação ao arquivo "date-funcionamento"
+import Funcionamento from "./modules/funcionamento.js"; // caminho deste arquivo em relação ao arquivo "date-funcionamento"
 
 import SlideNav from './modules/slide.js';
 
