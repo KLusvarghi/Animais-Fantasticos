@@ -99,3 +99,9 @@ ul.custom-controls {
 .arrow-nav button.prev {
   transform: rotate(180deg); /* Roracionado a imagem */
 }
+
+@media (max-width: 650px){
+  .arrow-nav {
+    display: none;
+  }
+}
