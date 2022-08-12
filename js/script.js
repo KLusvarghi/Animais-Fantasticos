@@ -10,6 +10,9 @@ import DropdownMenu from "./modules/dropdownMenu.js"; // caminho deste arquivo e
 import MenuMobile from "./modules/menu-mobile.js"; // caminho deste arquivo em relação ao arquivo "fetch-animais"
 import Funcionamento from "./modules/date-funcionamento.js"; // caminho deste arquivo em relação ao arquivo "date-funcionamento"
 
+import SlideNav from './modules/slide.js';
+
+
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
 
@@ -40,3 +43,12 @@ menuMobile.init();
 
 const funcionamento = new Funcionamento('[data-semana]', 'aberto');
 funcionamento.init();
+
+
+// Silde
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addArrow('.prev', '.next');
+
+slide.addControl('.custom-controls') // passando a classe como parametro para ativar as thubes logo a cima do wrapper, e consecutivamente irá desaparecer a navegação pelas bolinha a baixo do wrapper

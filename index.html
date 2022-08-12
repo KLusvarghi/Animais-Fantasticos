@@ -19,12 +19,15 @@
     <!-- <div class="numeral">19323</div> Apenas teste -->
     <div class="grid-container">
       <nav class="menu" data-menu="suave">
-      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
         <ul data-menu="list" id="menu">
           <li><a href="#animais">Animais</a></li>
           <li><a href="#faq">Faq</a></li>
 
-          <li data-dropdown> <!-- Essa 'data' sera usado nos eventos do JS-->
+          <li data-dropdown>
+            <!-- Essa 'data' sera usado nos eventos do JS-->
             <a href="sobre.html">sobre</a>
             <ul class="dropdown-menu">
               <li><a href="empresa.html">A Empresa</a></li>
@@ -44,22 +47,22 @@
         <h1 class="titulo">Animais Fantásticos</h1>
         <ul class="animais-lista" data-tab="menu">
           <li>
-            <img src="img/imagem1.jpg" />
+            <img src="img/animais/imagem1.jpg" />
           </li>
           <li>
-            <img src="img/imagem2.jpg" />
+            <img src="img/animais/imagem2.jpg" />
           </li>
           <li>
-            <img src="img/imagem3.jpg" />
+            <img src="img/animais/imagem3.jpg" />
           </li>
           <li>
-            <img src="img/imagem4.jpg" />
+            <img src="img/animais/imagem4.jpg" />
           </li>
           <li>
-            <img src="img/imagem5.jpg" />
+            <img src="img/animais/imagem5.jpg" />
           </li>
           <li>
-            <img src="img/imagem6.jpg" />
+            <img src="img/animais/imagem6.jpg" />
           </li>
         </ul>
         <div class="animais-descricao" data-tab="content">
@@ -73,9 +76,20 @@
             <p>
               Também apresentam como particularidade suas pupilas ovais,
               semelhantes às pupilas verticais dos felídeos.
-            </p> 
+            </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam laudantium, quod ipsa mollitia eveniet amet consequatur et saepe facere qui esse asperiores, aperiam sed, fuga libero doloribus quae a quaerat minima accusamus placeat earum porro alias quo? Libero dolores iste quia. In praesentium ex, animi, deleniti vitae amet nihil similique suscipit iusto harum soluta id sint qui commodi doloribus quo. Esse quam, minus vel soluta repellat voluptatibus ab aliquid at dolore exercitationem. Qui aut maxime enim aperiam temporibus nisi, ratione vitae veniam fugiat. Deserunt maxime, harum corrupti deleniti, impedit nostrum sunt commodi soluta perspiciatis est culpa, sed temporibus quibusdam iste?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+              laudantium, quod ipsa mollitia eveniet amet consequatur et saepe
+              facere qui esse asperiores, aperiam sed, fuga libero doloribus
+              quae a quaerat minima accusamus placeat earum porro alias quo?
+              Libero dolores iste quia. In praesentium ex, animi, deleniti vitae
+              amet nihil similique suscipit iusto harum soluta id sint qui
+              commodi doloribus quo. Esse quam, minus vel soluta repellat
+              voluptatibus ab aliquid at dolore exercitationem. Qui aut maxime
+              enim aperiam temporibus nisi, ratione vitae veniam fugiat.
+              Deserunt maxime, harum corrupti deleniti, impedit nostrum sunt
+              commodi soluta perspiciatis est culpa, sed temporibus quibusdam
+              iste?
             </p>
           </section>
 
@@ -228,6 +242,31 @@
         </dl>
       </section>
 
+      <section class="grid-section galeria" data-anime="scroll">
+        <ul class="custom-controls">
+          <li><img src="img/slide/foto1-thumb.jpg" alt="thumb1" /></li>
+          <li><img src="img/slide/foto2-thumb.jpg" alt="thumb2" /></li>
+          <li><img src="img/slide/foto3-thumb.jpg" alt="thumb3" /></li>
+          <li><img src="img/slide/foto4-thumb.jpg" alt="thumb4" /></li>
+          <li><img src="img/slide/foto5-thumb.jpg" alt="thumb4" /></li>
+          <li><img src="img/slide/foto6-thumb.jpg" alt="thumb6" /></li>
+        </ul>
+        <div class="slide-wrapper">
+          <ul class="slide">
+            <li><img src="img/slide/foto1.jpg" alt="" /></li>
+            <li><img src="img/slide/foto2.jpg" alt="" /></li>
+            <li><img src="img/slide/foto3.jpg" alt="" /></li>
+            <li><img src="img/slide/foto4.jpg" alt="" /></li>
+            <li><img src="img/slide/foto5.jpg" alt="" /></li>
+            <li><img src="img/slide/foto6.jpg" alt="" /></li>
+          </ul>
+        </div>
+        <div class="arrow-nav">
+          <button class="prev"></button>
+          <button class="next"></button>
+        </div>
+      </section>
+
       <section class="grid-section numeros" data-anime="scroll">
         <h1 class="titulo">Números</h1>
         <div class="numeros-grid">
@@ -253,7 +292,11 @@
       <section class="grid-section contato" data-anime="scroll" id="contato">
         <h1 class="titulo">Contato</h1>
         <!-- poderia colocar o "title="Endereço..." porem iria ficar an frentre do meu tooltip e não dá para estilizar como quero -->
-        <div class="mapa" data-tooltip aria-label="Endereço perto do estacioanmento">
+        <div
+          class="mapa"
+          data-tooltip
+          aria-label="Endereço perto do estacioanmento"
+        >
           <img src="img/mapa.png" />
         </div>
         <ul class="dados">
@@ -264,7 +307,9 @@
           <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
 
           <!-- sendo os dias da semana 0 para domingo e 6 para sabado -->
-          <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
+          <li data-semana="1,2,3,4,5" data-horario="8,18">
+            Seg à Sex das 8 às 18
+          </li>
         </ul>
       </section>
 
@@ -281,13 +326,13 @@
           <label for="email">Email</label>
           <input type="text" for="email" name="email" />
           <label for="senha">senha</label>
-          <input type="password" for="senha" name="senha"/>
+          <input type="password" for="senha" name="senha" />
           <button type="submit">Entrar</button>
         </form>
       </div>
     </sction>
 
-    <script src="main.js"></script> 
+    <script src="main.js"></script>
     <!-- puxando o arquivo "main.js" por que pe o arquivo reduzido, podendo tirar o type="module" -->
   </body>
 </html>
