@@ -16,7 +16,8 @@ export default class MenuMobile {
     // this.init() // podendo iniciar a class desta maneira tambem, sem problemas
   }
 
-  openMenu() {
+  openMenu(event) {
+    event.preventDefault(); // previnindo o evento porque no mobile ele acaba disparando o evnto de click e touchstart, sendo assim, ele irá abrir e fechar o menu ao mesmo tempo
     this.menuList.classList.toggle(this.activeClass);
 
     this.menuButton.classList.toggle(this.activeClass);

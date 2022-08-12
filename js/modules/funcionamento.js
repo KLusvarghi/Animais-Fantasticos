@@ -17,14 +17,14 @@ export default class Funcionamento {
     this.horarioAgora = this.dataAgora.getUTCHours() - 3; // para que fncione em outros paises
   }
 
-  open() {
+  estaAberto() {
     const semanaAberto = this.diasSemana.indexOf(this.diaAgora) !== -1; // verifica se o dias da semana está dentro da array, caso seja diferente de -1 (que não é os dias aberto) dará true
     const horarioAberto = (this.horarioAgora >= this.horarioSemana[0] && this.horarioAgora < this.horarioSemana[1]);
     return semanaAberto && horarioAberto;
   }
 
   ativaAberto() {
-    if (this.open) {
+    if (this.estaAberto()) {
       this.funcionamento.classList.add(this.activeClass);
     }
   }
@@ -35,6 +35,6 @@ export default class Funcionamento {
       this.dadosAgora()
       this.ativaAberto()
     }
-    return this
+    return this;
   }
 }

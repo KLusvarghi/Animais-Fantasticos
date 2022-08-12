@@ -48,3 +48,11 @@ ul.dropdown-menu {
 .dropdown-menu li a:hover{
   color: #fff;
 }
+
+
+@media (max-width: 700px) { /* para quando eu abrir o meu menu em smartphones, ele já abrir a aba "sobre". Isso para evitar um erro que ocorrer quando abrimos a aba sobre e em seguida tentamos clicar em "contato" */
+  [data-dropdown] .dropdown-menu{
+    display: block;
+    animation: showUp .3s forwards;
+  }
+}

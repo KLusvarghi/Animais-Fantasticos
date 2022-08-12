@@ -34,11 +34,13 @@
 
 .modal {
   background-color: #fff;
-  min-width: 300px;
+  width: 80vw;
+  max-width: 600px; /* Ele irá até 600px de largura*/
   padding: 40px;
   border: 10px solid #FB5;
   box-shadow: 0 0 0 10px #fff;
   position: relative; /* Para que eu consigo colocar o 'X' no lado superior direito da caixa */
+  box-sizing: border-box; /* Assim ele ficará responsivo e com 40px de padding que foi adicioando logo acima*/
 }
 
 .fechar{
@@ -51,10 +53,7 @@
   border-radius: 50%;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.3);
   font-weight: bold;
-  font-size: 1.2rem;
-  font-family: 'IBM Plex Mono', monospace;
-  color: #fff;
-  background-color: #E54;
+  background: #E54 url("../img/arrows/fechar.svg") no-repeat center center;
   cursor: pointer;
 }
 
@@ -69,6 +68,8 @@
   width: 100%;
   padding: .7rem .5rem;
   box-sizing: border-box;
+  border: 2px solid #222;
+  border-radius: 0;
 }
 
 .modal button[type="submit"]{ /* Selecionando um botão especifico, que é o que tem do type "submit" */
