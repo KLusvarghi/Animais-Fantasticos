@@ -1,7 +1,7 @@
-.galeria { /* como o projeto está definido em grid colom, temos que falar em quantas colunas essa section irá ocupar */
+.galeria {
+  /* como o projeto está definido em grid colom, temos que falar em quantas colunas essa section irá ocupar */
   grid-column: 1 / -1;
 }
-
 
 .slide-wrapper {
   overflow: hidden; /* Tirando assim a barra horizntal */
@@ -21,9 +21,9 @@
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0, 2px, 4px, rgba(0, 0, 0, 0.4);
-  opacity: .8;
-  transform: scale(.8); /* Assim o slide ficando menor*/
-  transition: .4s;
+  opacity: 0.8;
+  transform: scale(0.8); /* Assim o slide ficando menor*/
+  transition: 0.4s;
 }
 
 /* Animação do slide */
@@ -32,19 +32,15 @@
   transform: translate3d()
 } */
 
-
-.slide li.active{
+.slide li.active {
   opacity: 1;
   transform: scale(1); /* assim o slide fica na posição normal*/
 }
 
 /* por performace, dizemos o que irá mudar */
 .slide:hover {
-  will-change:transition;
+  will-change: transition;
 }
-
-
-
 
 ul.custom-controls {
   display: flex; /* para colcoar um ao lado do outro */
@@ -54,53 +50,50 @@ ul.custom-controls {
   grid-column: 1 / -1;
 }
 
-.custom-controls li{
+.custom-controls li {
   opacity: 0.8;
-  transform: scale(.8);
+  transform: scale(0.8);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   overflow: hidden; /* para aparecer o ciuculo tem que colocar overflow hiden */
   margin: 2px;
-  box-shadow: 0, 2px, 4px, rgba(0, 0, 0, .5);
+  box-shadow: 0, 2px, 4px, rgba(0, 0, 0, 0.5);
   transition: 0.3s;
 }
 
 .custom-controls li.active {
   opacity: 1;
-  transform: scale(1)
+  transform: scale(1);
 }
 
-
- 
 .arrow-nav {
   display: flex;
   justify-content: center;
-  margin:  20px 0;
+  margin: 20px 0;
   grid-column: 1 / -1;
 }
 
-.arrow-nav button{
+.arrow-nav button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
   color: white;
   width: 40px;
   height: 40px;
-  background: #FB5 url('../img/slide/arrow.svg') center center no-repeat;
+  background: #fb5 url('../public/img/slide/arrow.svg') center center no-repeat;
 }
 
-
-.arrow-nav button:nth-child(1){ /* seleciona elementos com base em suas posições em um grupo de elementos irmãos. */ 
+.arrow-nav button:nth-child(1) {
+  /* seleciona elementos com base em suas posições em um grupo de elementos irmãos. */
   margin-right: 400px;
-
 }
 
 .arrow-nav button.prev {
   transform: rotate(180deg); /* Roracionado a imagem */
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
   .arrow-nav {
     display: none;
   }
